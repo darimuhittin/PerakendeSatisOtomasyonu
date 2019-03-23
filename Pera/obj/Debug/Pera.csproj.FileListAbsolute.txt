@@ -1,0 +1,15 @@
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\Pera.exe.config
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\Pera.exe
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\Pera.pdb
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.csprojAssemblyReference.cache
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.Form1.resources
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.Properties.Resources.resources
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.csproj.GenerateResource.cache
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.csproj.CoreCompileInputs.cache
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.exe
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.pdb
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\EntityFramework.dll
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\EntityFramework.xml
+C:\Users\dari\Desktop\Pera\Pera\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dari\Desktop\Pera\Pera\obj\Debug\Pera.csproj.CopyComplete
