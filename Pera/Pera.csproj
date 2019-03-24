@@ -54,11 +54,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Calisan.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="AnaPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AnaPanel.Designer.cs">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalisanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalisanEkle.Designer.cs">
+      <DependentUpon>CalisanEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="Magaza.cs" />
     <Compile Include="Musteri.cs" />
@@ -71,8 +77,11 @@
     <Compile Include="Satis_Urun.cs" />
     <Compile Include="Urun.cs" />
     <Compile Include="Magaza_Urun.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AnaPanel.resx">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalisanEkle.resx">
+      <DependentUpon>CalisanEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -96,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Pera
 {
-    public partial class Form1 : Form
+    public partial class CalisanEkle : Form
     {
-        public Form1()
+        public CalisanEkle()
         {
             InitializeComponent();
         }
+        
     }
 }
