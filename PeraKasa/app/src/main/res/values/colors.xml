@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="beyaz">#FFF</color>
+    <color name="tabloHeader">#1565C0</color>
+    <color name="satir1">#82B1FF</color>
+    <color name="satir2">#A7FFEB</color>
+
+    <color name="black_overlay">#66000000</color>
 </resources>

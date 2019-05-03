@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Pera Kasa</string>
+    <string name="btnTara">BARKOD TARA</string>
+    <string name="satisGoruntule">Satış Görüntüle</string>
+
+    <string name="title_activity_satis_dokum">satisDokum</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="strTableHeaderBarkod">Barkod</string>
+    <string name="strTableHeaderMiktar">Miktar</string>
+    <string name="strTableHeaderFiyat">Fiyat</string>
 </resources>
