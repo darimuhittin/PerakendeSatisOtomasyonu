@@ -13,7 +13,7 @@ public class ConnectionClass {
     private String classs = "net.sourceforge.jtds.jdbc.Driver";
     private String db = "dbPera";
     private String un = "dari";
-    private String password = "5emrends";
+    private String password = "5emrends1.";
 
 
     Connection baglanti() {

@@ -5,59 +5,106 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TableLayout
-        android:id="@+id/tblSatisDokumu"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-        <TableRow
-            android:id="@+id/rh"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/rh0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:background="@color/tabloHeader"
-                android:text="@string/strTableHeaderBarkod"
-                android:textAlignment="center"
-                android:textColor="#FFD600"
-                android:textSize="18sp" />
+            <TableLayout
+                android:id="@+id/tblSatisDokumu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp">
 
-            <TextView
-                android:id="@+id/rh1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@color/tabloHeader"
-                android:text="@string/strTableHeaderMiktar"
-                android:textAlignment="center"
-                android:textColor="#FFD600"
-                android:textSize="18sp" />
+                <TableRow
+                    android:id="@+id/rh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/rh2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:background="@color/tabloHeader"
-                android:text="@string/strTableHeaderFiyat"
-                android:textAlignment="center"
-                android:textColor="#FFD600"
-                android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/rh0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:background="@color/tabloHeader"
+                        android:text="@string/strTableHeaderBarkod"
+                        android:textAlignment="center"
+                        android:textColor="#FFD600"
+                        android:textSize="18sp" />
 
-        </TableRow>
+                    <TextView
+                        android:id="@+id/rh1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@color/tabloHeader"
+                        android:text="@string/strTableHeaderMiktar"
+                        android:textAlignment="center"
+                        android:textColor="#FFD600"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/rh2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@color/tabloHeader"
+                        android:text="@string/strTableHeaderFiyat"
+                        android:textAlignment="center"
+                        android:textColor="#FFD600"
+                        android:textSize="18sp" />
+
+                </TableRow>
 
 
-    </TableLayout>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSatisKayit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Satış Kayıt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSatisIptal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.752"
+        android:onClick="satisKayitOnClick"/>
+
+    <Button
+        android:id="@+id/btnSatisIptal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Satış İptal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSatisKayit"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.752" />
+
 </android.support.constraint.ConstraintLayout>

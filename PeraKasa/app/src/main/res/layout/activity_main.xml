@@ -8,15 +8,18 @@
     tools:context=".MainActivity">
 
     <Button
-        android:text="Giriş"
+        android:id="@+id/btnGiris"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btnGiris"
-        android:gravity="center"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="53dp"
-        app:layout_constraintTop_toBottomOf="@+id/pwSifre" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="Giriş"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="32dp" android:layout_marginEnd="32dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/pwSifre" />
 
     <TextView
         android:id="@+id/tvBaslik"
@@ -69,17 +72,5 @@
         app:layout_constraintEnd_toEndOf="parent" android:id="@+id/pbIslemCubugu"
         app:layout_constraintHorizontal_bias="0.498" android:layout_marginTop="42dp"
         app:layout_constraintTop_toBottomOf="@+id/btnGiris"/>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Muhittin Darı"
-        android:textAlignment="center"
-        android:textColor="#FFAB00"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btnGiris"
-        app:layout_constraintStart_toStartOf="@+id/btnGiris" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,7 +1,6 @@
 package com.pera.perakasa;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.view.Gravity;
@@ -159,6 +158,8 @@ class DBIslem extends AsyncTask < ArrayList < String >, String, HashMap > {
                 t1.addView ( r1 );
             }
             // SATIŞ LİSTESİ DOLDUR SON
+
+            _act.satisMap = map;
         }
     }
 }

@@ -34,8 +34,10 @@ public class MainMenuActivity extends Activity implements ZXingScannerView.Resul
         super.onCreate(savedInstanceState);
         requestWindowFeature ( Window.FEATURE_NO_TITLE );
         setContentView(R.layout.activity_main_menu);
-        mp = MediaPlayer.create(this,R.raw.barcode );
+        mp = MediaPlayer.create(getApplicationContext (),R.raw.barcode);
         mp.setVolume(1.0f,1.0f);
+        mp.start ();
+
 
     }
 
@@ -56,17 +58,14 @@ public class MainMenuActivity extends Activity implements ZXingScannerView.Resul
     protected void onPause() {
         super.onPause();
         if (zXingScannerView != null){
-            //zXingScannerView.stopCamera();
-            //zXingScannerView.stopCameraPreview();
-            //zXingScannerView=null;
+            zXingScannerView.stopCamera();
         }
     }
 
 
     public void anaEkranaDon(){
-        //zXingScannerView.stopCamera();
-        //zXingScannerView.stopCameraPreview();
-        //zXingScannerView = null;
+        zXingScannerView.stopCameraPreview ();
+        zXingScannerView.stopCamera();
         setContentView(R.layout.activity_main_menu);
     }
     @Override
@@ -78,10 +77,11 @@ public class MainMenuActivity extends Activity implements ZXingScannerView.Resul
             super.onBackPressed();
     }
 
+
     @Override
     public void handleResult(Result rawResult) {
         mp.start();
-        Toast.makeText(getApplicationContext(),rawResult.getText(),Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),rawResult.getText(),Toast.LENGTH_SHORT).show();
         satisListesiMain.add(rawResult.getText());
         zXingScannerView.resumeCameraPreview(this);
     }
